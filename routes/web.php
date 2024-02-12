@@ -14,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('comics');
+    return view('home', compact('comics'));
 })->name('home');
 
 Route::get('/header', function () {
     return view('header');
 })->name('header');
+
+
 
 Route::get('/footer', function () {
     return view('footer');

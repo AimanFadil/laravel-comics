@@ -92,3 +92,38 @@ footer {
         }
     }
 }
+
+.main {
+    background-color: rgba(28, 28, 28, 255);
+
+    .bottone {
+        width: 200px;
+
+    }
+
+    .btn-blue {
+        border: rgba(2, 130, 249, 255) solid;
+        color: white;
+        background-color: rgba(2, 130, 249, 255);
+    }
+
+    .mid {
+        display: flex;
+
+
+
+    }
+
+    .cont-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        img {
+            width: 150px;
+            height: 180px;
+        }
+
+    }
+
+}
