@@ -33,8 +33,9 @@ Route::get('/single/{param}', function ($id) {
     $comic = null;
 
     foreach ($comics as $item) {
-        if ($item['id'] == $id);
-        $comic = $item;
+        if ($item['id'] == $id) {
+            $comic = $item;
+        };
     }
     return view('single', compact('comic'));
 })->name('single');
