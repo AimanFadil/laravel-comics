@@ -28,7 +28,7 @@ Route::get('/footer', function () {
     return view('footer');
 })->name('footer');
 
-Route::get('/comic/{param}', function ($id) {
+Route::get('/single/{param}', function ($id) {
     $comics = config('comics');
     $comic = null;
 
@@ -36,5 +36,5 @@ Route::get('/comic/{param}', function ($id) {
         if ($item['id'] == $id);
         $comic = $item;
     }
-    return view('comic', compact('comic'));
-})->name('comic');
+    return view('single', compact('comic'));
+})->name('single');
