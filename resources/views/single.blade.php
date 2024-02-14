@@ -16,6 +16,12 @@
                     <h4 class="text-primary">SALES DATE:</h4>
                     <p class="text-white">{{ $comic['sale_date'] }}</p>
                 </div>
+                <div class="col-1 p-5">
+                    <a href="{{ route('home') }}">
+                        <button class="btn btn-primary">HOME</button>
+                    </a>
+
+                </div>
             </div>
         </div>
     </div>
